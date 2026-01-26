@@ -1,9 +1,11 @@
 # 🎓 CareerAdvisor – Smart Career Guidance Platform
 
 ## 📌 Project Overview
-CareerAdvisor is a student-focused web platform designed to help users identify suitable career paths based on their skills, interests, and learning progress.
+**Problem Statement:** One-stop personalized career and education advisor.  
 
-The platform combines skill assessment quizzes, career recommendations, progress tracking, and course suggestions in one place to make career planning simple and effective.
+CareerAdvisor is a **frontend-focused web platform** designed to help students identify suitable career paths based on their skills, interests, and learning progress.  
+
+The platform combines **skill assessment quizzes, career recommendations, progress tracking, and course suggestions** in one place to make career and education planning simple and effective.  
 
 ---
 
@@ -28,7 +30,7 @@ The platform combines skill assessment quizzes, career recommendations, progress
 
 ---
 
-## 📂 Project Structure
+## 📂 Project Structure                                                                                                                                     
 careeradvisor/
 │
 ├── index.html
@@ -46,17 +48,17 @@ careeradvisor/
 │
 └── images/
 
-
+---
 
 ## 🚀 How to Run the Project
 1. Download or clone the repository  
-2. Open index.html in any modern web browser  
+2. Open `index.html` in any modern web browser  
 3. Navigate through the website using the dashboard  
 
 ---
 
 ## 🌐 Live Website
-https://innovate5.github.io/careeradvisor/
+[https://innovate5.github.io/careeradvisor/](https://innovate5.github.io/careeradvisor/)  
 
 ---
 
@@ -64,7 +66,14 @@ https://innovate5.github.io/careeradvisor/
 **Group Name:** Innovate5  
 **Project Title:** CareerAdvisor  
 
+**Team Members:**  
+- Ruchita S. Sambhe  
+- Shruti L. Supekar  
+- Anushka R. Pawar  
+- Swamini R. Ronghe  
+- Manaswi P. Chaudhari  
+
 ---
 
 ## 🏁 Conclusion
-CareerAdvisor simplifies career planning by integrating assessments, progress tracking, and personalized recommendations into a single, user-friendly platform for students.
+CareerAdvisor simplifies career and education planning by integrating **assessments, progress tracking, and personalized recommendations** into a single, user-friendly platform for students.
