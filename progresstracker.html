@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Progress Tracker | Career Advisor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body style="background: linear-gradient(135deg, #f6f4fb, #e6d9f7) !important; color: #333 !important;">
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <h1>📈 Progress Tracker</h1>
+    <p>Visualize your learning, assessments, and career milestones</p>
+  </header>
+
+  <!-- PROGRESS GRID -->
+  <section class="progress-grid">
+
+    <!-- Learning Progress -->
+    <div class="progress-card">
+      <h2>📚 Learning Progress</h2>
+      <ul>
+        <li>Java Course – 70% Complete</li>
+        <li>Python Data Science – 45% Complete</li>
+        <li>UI/UX Design – 80% Complete</li>
+        <li>Digital Marketing – 60% Complete</li>
+        <li>AI / ML Basics – 30% Complete</li>
+      </ul>
+    </div>
+
+    <!-- Assessment Scores -->
+    <div class="progress-card">
+      <h2>📝 Assessment Scores</h2>
+      <ul>
+        <li>Career Aptitude Quiz – 85%</li>
+        <li>Technical Skill Test – 78%</li>
+        <li>Soft Skills Evaluation – 90%</li>
+        <li>Leadership Quiz – 65%</li>
+        <li>Time Management Test – 80%</li>
+      </ul>
+    </div>
+
+    <!-- Certifications Earned -->
+    <div class="progress-card">
+      <h2>🎓 Certifications Earned</h2>
+      <ul>
+        <li>Java Developer Certification</li>
+        <li>Project Management (PMP)</li>
+        <li>Digital Marketing Essentials</li>
+        <li>AI & ML Foundations</li>
+        <li>UI/UX Design Fundamentals</li>
+      </ul>
+    </div>
+
+    <!-- Milestones Achieved -->
+    <div class="progress-card">
+      <h2>🏆 Milestones Achieved</h2>
+      <ul>
+        <li>Completed 5 Courses</li>
+        <li>Scored 80%+ in 3 Assessments</li>
+        <li>Earned 4 Certifications</li>
+        <li>Completed Career Roadmap Plan</li>
+        <li>Joined Mentorship Program</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- VISUAL PROGRESS SECTION -->
+  <section class="visual-progress">
+    <div class="chart-container">
+      <h2>Progress Overview</h2>
+      <canvas id="progressPie" width="300" height="300"></canvas>
+    </div>
+
+    <div class="calendar-container">
+      <h2>Learning Calendar – January 2026</h2>
+      <table class="calendar">
+        <tr>
+          <th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th>
+        </tr>
+        <tr>
+          <td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td class="done">5</td>
+        </tr>
+        <tr>
+          <td class="done">6</td><td>7</td><td class="done">8</td><td>9</td><td class="done">10</td><td>11</td><td>12</td>
+        </tr>
+        <tr>
+          <td>13</td><td class="done">14</td><td>15</td><td class="done">16</td><td>17</td><td>18</td><td class="done">19</td>
+        </tr>
+        <tr>
+          <td>20</td><td>21</td><td class="done">22</td><td>23</td><td>24</td><td>25</td><td class="done">26</td>
+        </tr>
+        <tr>
+          <td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td>
+        </tr>
+      </table>
+      <p>🟪 Days marked indicate learning completed</p>
+    </div>
+  </section>
+
+  <!-- CHART JS -->
+  <script>
+    const ctx = document.getElementById('progressPie').getContext('2d');
+    const progressPie = new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ['Learning', 'Assessments', 'Certifications', 'Milestones'],
+        datasets: [{
+          label: 'Progress',
+          data: [65, 80, 40, 70],
+          backgroundColor: ['#764ba2','#9b59b6','#c39bd3','#d6a3f5'],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { position: 'bottom' } }
+      }
+    });
+
+    const quizResult = localStorage.getItem("careerQuizResult");
+
+    if (quizResult) {
+      const assessmentCard = document.querySelector(".progress-card ul");
+      const li = document.createElement("li");
+      li.innerHTML = `Career Quiz Result – <strong>${quizResult}</strong>`;
+      assessmentCard.prepend(li);
+    }
+  </script>
+
+</body>
+</html>

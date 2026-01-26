@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | Career Advisor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+
+  <!-- NAVBAR -->
+  <nav class="navbar dashboard-nav">
+    <div class="logo">CareerAdvisor</div>
+    <div class="nav-links">
+      <span>Hi, Student 👋</span>
+      <a href="login.html" class="btn-outline">Logout</a>
+    </div>
+  </nav>
+
+  <!-- DASHBOARD WRAPPER -->
+  <main class="dashboard-container">
+
+    <!-- HEADER -->
+    <section class="dashboard-header">
+      <h1>Your Dashboard</h1>
+      <p>Track your career journey in one place</p>
+    </section>
+
+    <!-- CARDS -->
+    <section class="dashboard-grid">
+      <section class="subgrid">
+      <div class="dashboard-card">
+        <h3>🧠<a href="skillassessment.html"> Skill Assessnent Quiz</a></h3>
+        <p>Test your skills, Track your growth.</p>
+      </div>
+
+      <div class="dashboard-card">
+       <h3>🎯<a href="recommendedcareer.html"> Recommended Career</a></h3>
+        <p>Smart recommendations for your future.</p>
+      </div>
+
+      <div class="dashboard-card">
+        <h3>📘<a href="suggestedcourses.html"> Suggested Courses</a></h3>
+        <p>Courses aligned with your goals.</p>
+      </div>
+      </section>
+      <section class="subgrid">
+      <div class="dashboard-card">
+        <h3>🏅<a href="certification.html"> Certifications</a></h3>
+        <p>Recognized credentials for real-world success.</p>
+      </div>
+
+      <div class="dashboard-card">
+        <h3>📈<a href="progresstracker.html"> Progress Tracker</a></h3>
+        <p>Track your growth, step by step.</p>
+      </div>
+
+       <div class="dashboard-card">
+        <h3>❓<a href="faqs.html"> FAQ's</a></h3>
+        <p>Quick answers to help you plan your career.</p>
+      </div>
+      </section>
+    </section>
+
+  </main>
+<div class="ai-float-btn" onclick="toggleAI()">🤖</div>
+
+<!-- AI ASSISTANT PANEL -->
+<div class="ai-panel" id="aiPanel">
+  <div class="ai-header">
+    <h3>🤖 AI Career Assistant</h3>
+    <span class="ai-close" onclick="toggleAI()">✖</span>
+  </div>
+  <div class="ai-content">
+    <p id="aiAdvice">
+      Hello 👋  
+      Complete your Skill Assessment Quiz to get personalized career guidance.
+    </p>
+  </div>
+</div>
+
+<script>
+  function toggleAI() {
+    document.getElementById("aiPanel").classList.toggle("active");
+  }
+
+  // Optional: Load quiz result automatically
+  const quizResult = localStorage.getItem("careerQuizResult");
+  if (quizResult) {
+    document.getElementById("aiAdvice").innerHTML = `
+      🎯 <strong>Your Recommended Career:</strong><br>
+      ${quizResult}<br><br>
+      🤖 AI Tip: Start beginner courses and internships related to this field.
+    `;
+  }
+  
+</script>
+
+</body>
+</html>

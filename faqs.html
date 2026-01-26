@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQs | Career Advisor</title>
+  <style>
+    body {
+      background-color: #f0e2f5; /* Single-color background */
+      color: #333;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .page-header {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .page-header h1 {
+      font-size: 36px;
+      color: #764ba2;
+    }
+
+    .page-header p {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .faq-container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .faq {
+      background: #ffffff;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .faq:hover {
+      transform: translateY(-3px);
+    }
+
+    .faq-question {
+      padding: 20px;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+    }
+
+    .faq-question::after {
+      content: "+";
+      font-size: 24px;
+      color: #764ba2;
+      transition: transform 0.3s ease;
+    }
+
+    .faq:hover .faq-question::after {
+      content: "-";
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 20px;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .faq:hover .faq-answer {
+      max-height: 500px;
+      padding: 15px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="page-header">
+    <h1>❓ Frequently Asked Questions</h1>
+    <p>Find answers to the most common queries about our Career Advisor platform</p>
+  </header>
+
+  <div class="faq-container">
+    
+    <div class="faq">
+      <div class="faq-question">1. How do I find my recommended career path?</div>
+      <div class="faq-answer">Complete our skill assessment quiz and learning history analysis. Based on your interests and strengths, we will suggest careers tailored to you.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">2. Can I track my learning progress?</div>
+      <div class="faq-answer">Yes! Our Progress Tracker page helps you visualize completed courses, assessments, certifications, and milestones.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">3. Are the suggested courses free?</div>
+      <div class="faq-answer">We provide both free and premium course suggestions. You can filter based on your preference and career goals.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">4. How are certifications added to my profile?</div>
+      <div class="faq-answer">When you complete a course or pass an assessment, you can upload your certificate or link it from the verified provider, and it will appear in your Progress Tracker.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">5. Can I retake the skill assessment quiz?</div>
+      <div class="faq-answer">Yes, you can retake the quiz anytime. Your latest results will be used to update your recommended career paths.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">6. How is my learning calendar tracked?</div>
+      <div class="faq-answer">Our system tracks the days you spend on learning activities and marks them on your personalized calendar to help you stay consistent.</div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-question">7. Is my data private?</div>
+      <div class="faq-answer">Absolutely. All your progress, quiz results, and personal data are securely stored and will never be shared without your consent.</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
