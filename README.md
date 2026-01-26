@@ -1,0 +1,70 @@
+# 🎓 CareerAdvisor – Smart Career Guidance Platform
+
+## 📌 Project Overview
+CareerAdvisor is a student-focused web platform designed to help users identify suitable career paths based on their skills, interests, and learning progress.
+
+The platform combines skill assessment quizzes, career recommendations, progress tracking, and course suggestions in one place to make career planning simple and effective.
+
+---
+
+## 🎯 Features
+- 🧠 Skill Assessment Quiz with career-based recommendations  
+- 🎯 Recommended Career Paths  
+- 📘 Suggested Courses  
+- 📈 Progress Tracker with Pie Chart and Learning Calendar  
+- 🤖 AI Career Assistant Panel  
+- ❓ Frequently Asked Questions (FAQ) section  
+- 🔐 Login and Dashboard system  
+
+---
+
+## 🛠️ Technologies Used
+- HTML5  
+- CSS3  
+- JavaScript (Vanilla JS)  
+- Chart.js  
+- LocalStorage  
+- GitHub Pages (for hosting)  
+
+---
+
+## 📂 Project Structure
+careeradvisor/
+│
+├── index.html
+├── login.html
+├── dashboard.html
+├── skillassessment.html
+├── recommendedcareer.html
+├── suggestedcourses.html
+├── progresstracker.html
+├── certification.html
+├── faqs.html
+│
+├── style.css
+├── script.js
+│
+└── images/
+
+
+
+## 🚀 How to Run the Project
+1. Download or clone the repository  
+2. Open index.html in any modern web browser  
+3. Navigate through the website using the dashboard  
+
+---
+
+## 🌐 Live Website
+https://innovate5.github.io/careeradvisor/
+
+---
+
+## 👥 Team Details
+**Group Name:** Innovate5  
+**Project Title:** CareerAdvisor  
+
+---
+
+## 🏁 Conclusion
+CareerAdvisor simplifies career planning by integrating assessments, progress tracking, and personalized recommendations into a single, user-friendly platform for students.
