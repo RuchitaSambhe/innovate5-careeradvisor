@@ -58,7 +58,7 @@ careeradvisor/
 ---
 
 ## 🌐 Live Website
-[https://innovate5.github.io/careeradvisor/](https://innovate5.github.io/careeradvisor/)  
+[https://ruchitasambhe.github.io/innovate5-careeradvisor/](https://ruchitasambhe.github.io/innovate5-careeradvisor/) 
 
 ---
 
